@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class Form extends Component {
  render() { 
    const listlength = this.props.comlength.length
-   console.log(listlength)
   return (
    <div className="comment-section">
       <h2>{listlength} Comments</h2>
