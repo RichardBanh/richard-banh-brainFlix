@@ -9,7 +9,7 @@ class Videosug extends Component {
     )
    else {
     let sugs = this.props.sugs.map(stoop =>{
-      return(
+      return (
        <div className="titlesimg">
         <img src={stoop.image} alt=""/>
         <div className="titles">
@@ -20,16 +20,14 @@ class Videosug extends Component {
       )
     }
   )
-    return sugs
+  return (
+    <div>
+    <h4 className="boop">NEXT VIDEO</h4>
+    {sugs}
+    </div>
+    )
   }
   
-  return (
-  <div>
-  <h4 className="boop">NEXT VIDEO</h4>
-  {sugs}
-  </div>
-    // {suglist}
-    )
  
 }}
  

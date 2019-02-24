@@ -5,55 +5,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter} from 'react-router-dom'
 
-const sideVideo = [{
- id: 'Scotty Cranmer', 
- title: 'Become A Travel Pro In One Easy Lesson...', 
- channel: '', 
- image: './Images/video-list-0.jpg' 
-},
-{
- id: 'Scotty Cranmer', 
- title: 'Les Houches The Hidden Gem Of The...', 
- channel: '', 
- image: './Images/video-list-2.jpg' 
-},
-{
- id: 'Scotty Cranmer', 
- title: 'Travel Health Useful Medical Information...', 
- channel: '', 
- image: './Images/video-list-3.jpg' 
-},
-{
- id: 'Emily Harper', 
- title: 'Cheap Airline Tickets Great Ways To Save', 
- channel: '', 
- image: './Images/video-list-4.jpg' 
-},
-{
- id: 'Ethan Owen', 
- title: 'Take A Romantic Break In A Boutique Hotel', 
- channel: '', 
- image: './Images/video-list-5.jpg' 
-},
-{
- id: 'Lydia Perez', 
- title: 'Choose The Perfect Accommodations', 
- channel: '', 
- image: './Images/video-list-6.jpg' 
-},
-{
- id: 'Timothy Austin', 
- title: 'Cruising Destination Ideas', 
- channel: '', 
- image: './Images/video-list-7.jpg' 
-},
-{
- id: 'Scotty Cranmer', 
- title: 'Train Travel On Track For Safety', 
- channel: '', 
- image: './Images/video-list-8.jpg' 
-}
-];
 
 const mainVideo = [{
  id: 'Red Cow',
@@ -89,7 +40,7 @@ const mainVideo = [{
 
 ReactDOM.render(
 <BrowserRouter>
- <App mainVideo={mainVideo} sideVideo={sideVideo}/>
+ <App mainVideo={mainVideo}/>
 </BrowserRouter>
 , document.getElementById('root'));
 

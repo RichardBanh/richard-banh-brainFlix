@@ -32,7 +32,7 @@ class App extends Component {
   render() {
     const suggestedlistdata = this.state.data
     console.log(suggestedlistdata)
-    const videosection = () =><Videosection mainVideo={this.props.mainVideo} sideVideo={this.props.sideVideo}/>
+    const videosection = () =><Videosection mainVideo={this.props.mainVideo} sideVideo={suggestedlistdata}/>
     const up = () => <Videoup mainVideo={this.props.mainVideo}/>
     return (
       <div>
