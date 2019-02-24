@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Video from './videosuggested';
+import Videosug from './videosuggested';
 
 class Videolist extends Component {
  render() { 
-   console.log(this.props.sugs)
+  console.log(this.props.suggestedlistdata)
   return ( 
    <div className="flexing1">
-    <Video sugs={this.props.sugs} />
+    <Videosug sugs={this.props.suggestedlistdata} />
    </div>
    );
  }

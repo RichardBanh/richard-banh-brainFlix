@@ -6,7 +6,8 @@ import CommentL from './commentlist.jsx'
 import Videolist from './videolist.jsx'
 
 class Videosection extends Component {
- render() { 
+  render() { 
+  console.log(this.props.sideVideo)
   return ( 
    <div>
      <Video />
@@ -16,7 +17,7 @@ class Videosection extends Component {
        <Form comlength = {this.props.mainVideo[0].comments}/>
        <CommentL comments = {this.props.mainVideo[0].comments}/>
       </div>
-      <Videolist sugs = {this.props.sideVideo}/>
+      <Videolist suggestedlistdata = {this.props.sideVideo}/>
      </div>
    </div>
    );

@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 
 
-class Video extends Component {
+class Videosug extends Component {
  render() { 
+ if(this.props.sugs){}
 const sugs = this.props.sugs.map(stoop =>{
  return(
   <div className="titlesimg">
    <img src={stoop.image} alt=""/>
    <div className="titles">
    <h4>{stoop.title}</h4> 
-   <h5>{stoop.id}</h5>
+   <h5>{stoop.channel}</h5>
    </div>
   </div>
  )
@@ -24,4 +25,4 @@ const sugs = this.props.sugs.map(stoop =>{
  }
 }
  
-export default Video ;
+export default Videosug ;
