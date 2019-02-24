@@ -10,23 +10,29 @@ const urlvid = `https://project-2-api.herokuapp.com/videos${dakey}`
 
 
 class App extends Component {
-  state = {data: null};
+  
+
+  constructor(){
+    super();
+    this.state = {data: null};
+  }
 
   componentDidMount(){
     axios
-      .get(urlvid)
-        .then(response => {
-          const data = response.data
-          this.setState({
-            data: data
-          })
-        
-  })
+    .get(urlvid)
+      .then(response => {
+        const data = response.data
+        this.setState({
+          data: data
+        })
+      
+})
   }
 
   render() {
     const suggestedlistdata = this.state.data
-    const videosection = () =><Videosection mainVideo={this.props.mainVideo} sideVideo={suggestedlistdata}/>
+    console.log(suggestedlistdata)
+    const videosection = () =><Videosection mainVideo={this.props.mainVideo} sideVideo={this.props.sideVideo}/>
     const up = () => <Videoup mainVideo={this.props.mainVideo}/>
     return (
       <div>
