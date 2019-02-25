@@ -8,7 +8,7 @@ class Videotitle extends Component {
    <div className='videotitle'>
     <h1>{mainpath.title}</h1>
     <div className='flexing'>
-     <h3>By {mainpath.id}<span>{mainpath.timestamp}</span></h3>
+     <h3>By {mainpath.channel}<span>{mainpath.timestamp}</span></h3>
      <div className='likesviews'>
       <div className="views">
        <img src="./Icons/SVG/Icon-views.svg" alt="Eye Icon"/>

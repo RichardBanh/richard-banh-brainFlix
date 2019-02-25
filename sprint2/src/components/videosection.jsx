@@ -7,7 +7,6 @@ import Videolist from './videolist.jsx'
 
 class Videosection extends Component {
   render() { 
-  console.log(this.props.sideVideo)
   return ( 
    <div>
      <Video />
