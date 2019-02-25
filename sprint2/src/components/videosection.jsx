@@ -12,9 +12,9 @@ class Videosection extends Component {
      <Video />
      <div className="flexing2">
       <div>
-       <Videotitle mainVideo = {this.props.mainVideo[0]} />
-       <Form comlength = {this.props.mainVideo[0].comments}/>
-       <CommentL comments = {this.props.mainVideo[0].comments}/>
+       <Videotitle mainVideo = {this.props.mainVideo} />
+       <Form/>
+       <CommentL comments = {this.props.mainVideo.comments}/>
       </div>
       <Videolist suggestedlistdata = {this.props.sideVideo}/>
      </div>

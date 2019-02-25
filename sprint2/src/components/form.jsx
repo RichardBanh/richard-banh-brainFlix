@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 
 class Form extends Component {
  render() { 
-   const listlength = this.props.comlength.length
   return (
    <div className="comment-section">
-      <h2>{listlength} Comments</h2>
+      <h2>3 Comments</h2>
       <div className="text-box">
          <div className="nameandphoto">
            <img src="./Images/Mohan-muruge.jpg" alt=""/>

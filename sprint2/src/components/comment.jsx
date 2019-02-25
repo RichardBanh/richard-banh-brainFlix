@@ -2,26 +2,28 @@ import React, { Component } from 'react';
 
 class Comment extends Component {
  render() { 
-  const comlist = this.props.comment.map(comment =>{
-    return (
-      <div className='commentpicture'>
-        <div class= "blankimg"></div>
-        <div class="commenttitle">
-          <div class="titlebox">
-            <div class="name">{comment.name}</div>
-            <div class="date">{comment.date}</div>
-          </div>
-          <div class="comment">{comment.comment}</div>
-        </div>
-      </div>
+   if(this.props.comment === null) {
+    return(
+      <h1>Loading</h1>
     )
-  })
-  return (
-    <div>
-      {comlist}
-     </div>
-    );
- }
+  }
+  else{
+    this.props.comment.map(comment =>{
+      return (
+        <div className="commentpicture">
+          <div className="blankimg"></div>
+          <div className="commenttitle">
+            <div className="titlebox">
+              <div className="name">{comment.name}</div>
+              <div className="date">{comment.timestamp}</div>
+            </div>
+            <div className="comment">{comment.comment}</div>
+          </div>
+        </div>
+      )
+    })
+  }
+}
 }
  
 export default Comment;
