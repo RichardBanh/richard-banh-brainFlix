@@ -10,6 +10,7 @@ class Videosug extends Component {
    else {
     let sugs = this.props.sugs.map(stoop =>{
       return (
+      <a href="">
        <div className="titlesimg">
         <img src={stoop.image} alt=""/>
         <div className="titles">
@@ -17,6 +18,7 @@ class Videosug extends Component {
         <h5>{stoop.channel}</h5>
         </div>
        </div>
+       </a>
       )
     }
   )
@@ -27,8 +29,6 @@ class Videosug extends Component {
     </div>
     )
   }
-  
- 
 }}
  
 export default Videosug;
