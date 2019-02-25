@@ -37,31 +37,27 @@ class App extends Component {
   }
  
   render() {
-    if(this.state.datas && this.state.current === null) 
-      {
+    if (this.state.datas && this.state.current === null) 
+    {
       return (
       <div>Loading</div>
-    )
-     }
+      )
+    }
     else {
-      let total = () =>{
+      const suggestedlistdata = this.state.datas
+      const videosection = () => <Videosection mainVideo={this.state.current} sideVideo={suggestedlistdata}/>
+      const up = () => <Videoup mainVideo={this.props.mainVideo}/>
         return (
-        const suggestedlistdata = this.state.datas
-        const videosection = () =><Videosection mainVideo={this.state.current} sideVideo={suggestedlistdata}/>
-        const up = () => <Videoup mainVideo={this.props.mainVideo}/>
+        <div>
+          <Nav />
+          <Switch>
+            <Route path="/" exact component = {videosection}/>
+            <Route path="/videoup" component = {up}/>
+          </Switch>
+        </div>
         )
       }
     }
-    return (
-      <div>
-        <Nav />
-        <Switch>
-          <Route path="/" exact component = {videosection}/>
-          <Route path="/videoup" component = {up}/>
-        </Switch>
-      </div>
-    );
     }  
-}
 
 export default App;

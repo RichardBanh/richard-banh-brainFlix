@@ -8,8 +8,11 @@ import { Route, Switch} from 'react-router-dom';
 class App extends Component {
 
   render() {
-    const videosection = () =><Videosection mainVideo={this.props.mainVideo} sideVideo={this.props.sideVideo}/>
-    const up = () => <Videoup mainVideo={this.props.mainVideo}/>
+
+    const videosection =<Videosection mainVideo={this.props.mainVideo} sideVideo={this.props.sideVideo}/>
+
+    const up = <Videoup mainVideo={this.props.mainVideo}/>
+
     return (
       <div>
         <Nav />
