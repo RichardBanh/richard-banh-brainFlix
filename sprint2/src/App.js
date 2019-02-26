@@ -15,9 +15,10 @@ class App extends Component {
     super();
     this.state = 
     {
-      datas: [],
-      ids:'',
-      current:[]
+      data: [],
+      id:'',
+      current:[],
+      loaded: false
     };
   }
 
@@ -25,37 +26,40 @@ class App extends Component {
     axios
     .get( urlvid )
       .then( response => {
-        this.setState({datas: response.data})
-        this.setState({ids: response.data[0].id })
+        this.setState({data: response.data})
+        this.setState({id: response.data[0].id })
         
       })
       .then(()=>{
-        axios.get(currentvid(this.state.ids))
+        axios.get(currentvid(this.state.id))
         .then( response => {
           this.setState({current: response.data})
+          this.setState({loaded: true})
         })
       })
   }
  
   render() {
-    console.log(this.state.datas)
+    console.log(this.state.data)
     console.log(this.state.current)
+    console.log(this.state.loaded)
 
-    if (this.state.datas && this.state.current) 
+    if (this.state.loaded === false) 
     {
       return (
       <div>Loading</div>
       )
     }
     else {
-      const suggestedlistdata = this.state.datas
-      const videosection = () => <Videosection mainVideo={this.state.current} sideVideo={suggestedlistdata}/>
+      // console.log(this.state.loaded + "yes")
+      // const suggestedlistdata = this.state.datas
+      // const videosection = () => <Videosection mainVideo={this.state.current} sideVideo={suggestedlistdata}/>
       const up = () => <Videoup mainVideo={this.props.mainVideo}/>
         return (
         <div>
           <Nav />
           <Switch>
-            <Route path="/" exact component = {videosection}/>
+            <Route path="/" exact render={() => <Videosection mainVideo={this.state.current} sideVideo={this.state.data}/> }/>
             <Route path="/videoup" component = {up}/>
           </Switch>
         </div>

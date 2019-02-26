@@ -3,7 +3,7 @@ import Videosug from './videosuggested';
 
 class Videolist extends Component {
  render() { 
-  console.log(this.props.suggestedlistdata)
+  console.log(this.props.suggestedlistdata[0])
   return ( 
    <div className="flexing1">
     <Videosug sugs={this.props.suggestedlistdata} />

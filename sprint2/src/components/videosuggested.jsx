@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 
 
 class Videosug extends Component {
- render() { 
-   if(this.props.sugs === null) 
+  render() { 
+    console.log(this.props)
+   if(this.props.sugs === null) {
       return (
       <div>Loading</div>
     )
+      }
    else {
-    let sugs = this.props.sugs.map(stoop =>{
+    var sugs = this.props.sugs.map(stoop =>{
       return (
       <div>
       <h4 className="boop">NEXT VIDEO</h4>
@@ -26,6 +28,7 @@ class Videosug extends Component {
     }
   )
   }
+  return sugs
 }}
  
 export default Videosug;

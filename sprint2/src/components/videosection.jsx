@@ -14,7 +14,8 @@ class Videosection extends Component {
       <div>
        <Videotitle mainVideo = {this.props.mainVideo} />
        <Form/>
-       <CommentL comments =   {this.props.mainVideo.comments}/>
+       <CommentL comments =   
+       {this.props.mainVideo.comments}/>
       </div>
       <Videolist suggestedlistdata = {this.props.sideVideo}/>
      </div>
