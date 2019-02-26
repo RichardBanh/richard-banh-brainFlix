@@ -10,13 +10,15 @@ class Videosection extends Component {
     return (
       <div>
         <Video />
-        <div className="">
+        <div className="flexing5">
           <div className="">
             <Videotitle mainVideo={this.props.mainVideo} />
             <Form />
+            <CommentL comments={this.props.mainVideo.comments} />
           </div>
-          <CommentL comments={this.props.mainVideo.comments} />
-          <Videolist suggestedlistdata={this.props.sideVideo} />
+          <div>
+            <Videolist suggestedlistdata={this.props.sideVideo} />
+          </div>
         </div>
       </div>
     );

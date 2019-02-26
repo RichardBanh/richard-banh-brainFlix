@@ -486,7 +486,7 @@ video {
 /*--- video suggested ---*/
 .titlesimg {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   img {
     height: 70px;
     width: 120px;
@@ -650,7 +650,7 @@ video {
   }
 
   .videotitle p {
-    width: 580px;
+    max-width: 1000px;
   }
 
   .text-box {
@@ -684,11 +684,13 @@ video {
   .commenttitle {
     width: 80%;
   }
+
   .flexing1 {
     display: flex;
     flex-direction: column;
     margin-left: 19px;
     margin-right: 19px;
+    justify-content: flex-start;
   }
   .boop {
     margin-left: 0px;
@@ -705,6 +707,9 @@ video {
     margin-left: 0;
     margin-right: 0;
   }
+  .comment-section h2 {
+    margin-top: 15px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -717,6 +722,7 @@ video {
   .flexing5 {
     display: flex;
     flex-direction: row;
+    margin-left: 50px;
   }
   .comment-section {
     margin-top: 0px;
