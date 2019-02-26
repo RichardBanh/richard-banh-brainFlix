@@ -1,10 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import { BrowserRouter} from 'react-router-dom'
-
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import { BrowserRouter } from "react-router-dom";
 
 // const mainVideo = [{
 //  id: 'Red Cow',
@@ -17,12 +16,12 @@ import { BrowserRouter} from 'react-router-dom'
 //  duration: '',
 //  video: '',
 //  timestamp: '12/18/2018',
-//  comments: 
+//  comments:
 //  [
 //   {
 //    name : 'Micheal Lyons',
 //    date : '12/18/2018',
-//    comment : 'They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.', 
+//    comment : 'They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.',
 //   },
 //   {
 //    name : 'Gary Wong',
@@ -39,10 +38,11 @@ import { BrowserRouter} from 'react-router-dom'
 //  ];
 
 ReactDOM.render(
-<BrowserRouter>
- <App/>
-</BrowserRouter>
-, document.getElementById('root'));
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

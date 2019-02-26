@@ -1,6 +1,6 @@
 * {
   margin: 0px;
-  font-family: "Avenir","Roboto";
+  font-family: "Avenir", "Roboto";
 }
 
 @font-face {
@@ -21,7 +21,7 @@
 /*---Global---*/
 /*--- Header---*/
 .navigation {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .inner {
@@ -29,13 +29,13 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-top: 30px;
 }
 
@@ -60,11 +60,11 @@ nav ul {
   width: 90%;
   height: 110px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   text-decoration: none;
   list-style: none;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 15px;
   margin-left: 5%;
   margin-right: 5%;
@@ -81,15 +81,15 @@ nav button {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #0095FF;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0095ff;
 }
 
 nav button :nth-child(1) {
@@ -98,7 +98,7 @@ nav button :nth-child(1) {
 }
 
 nav button :hover {
-  background-color: #0065AD;
+  background-color: #0065ad;
 }
 
 nav .usericon {
@@ -182,13 +182,14 @@ ul {
   display: flex;
 }
 
-.videotitle .views img, .videotitle .likes img {
+.videotitle .views img,
+.videotitle .likes img {
   padding-right: 6px;
 }
 
 /*--- Photo Gallery---*/
 .photobackground {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding-top: 48px;
   padding-bottom: 40px;
 }
@@ -201,11 +202,11 @@ section.photo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .photo-grid {
@@ -214,12 +215,12 @@ section.photo {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 .photo-grid img {
@@ -227,7 +228,7 @@ section.photo {
   width: 344px;
   height: 193px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .custom {
@@ -238,13 +239,13 @@ section.photo {
 
 /*--- Footer---*/
 footer {
-  background-color: #0065AD;
-  color: #FFFFFF;
+  background-color: #0065ad;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-top: 48px;
   padding-right: 30px;
 }
@@ -255,15 +256,15 @@ footer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   width: 100%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   padding-bottom: 56px;
   margin-left: auto;
   margin-right: auto;
@@ -280,11 +281,11 @@ footer {
   display: flex;
   width: 40%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 .block img {
@@ -299,10 +300,10 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -358,15 +359,15 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-top: 30px;
   padding-bottom: 32px;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .text-box button {
@@ -390,22 +391,22 @@ a {
 #name {
   width: 460px;
   height: 48px;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   margin-bottom: 24px;
   padding-left: 16px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 4px;
 }
 
 #comment {
   width: 300px;
   height: 96px;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   padding-left: 16px;
   padding-top: 8px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 4px;
 }
 
@@ -417,12 +418,12 @@ button.form {
   border-bottom-width: 0px;
   padding-top: 0px;
   border-top-width: 0px;
-  background-color: #0095FF;
+  background-color: #0095ff;
 }
 
 form h4 {
   margin-bottom: 8px;
-  color: #AFAFAF;
+  color: #afafaf;
 }
 
 iframe {
@@ -435,7 +436,7 @@ iframe {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: #AFAFAF;
+  background-color: #afafaf;
   margin-right: 30px;
 }
 
@@ -444,18 +445,18 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
   margin-left: 30px;
   margin-right: 30px;
 }
 
 .comment {
   width: 75%;
-  font-size: .9em;
+  font-size: 0.9em;
   padding-bottom: 24px;
 }
 
@@ -464,8 +465,8 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 1px;
   border-bottom: 1px solid lightgrey;
   margin-bottom: 15px;
@@ -476,14 +477,14 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-bottom: 13px;
 }
 
 .date {
   margin-left: 10px;
-  color: #AFAFAF;
+  color: #afafaf;
   margin-top: 4px;
 }
 
@@ -506,11 +507,11 @@ iframe {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   max-width: 1032px;
@@ -523,7 +524,8 @@ table {
   margin-right: 10%;
 }
 
-th, td {
+th,
+td {
   text-align: left;
 }
 
@@ -536,15 +538,17 @@ td {
   padding-top: 20px;
 }
 
-td, th button {
-  border-bottom: 1px solid #E1E1E1;
+td,
+th button {
+  border-bottom: 1px solid #e1e1e1;
 }
 
 tr {
   width: 850px;
 }
 
-tr :nth-child(2), tr :nth-child(3) {
+tr :nth-child(2),
+tr :nth-child(3) {
   padding-left: 15px;
   padding-right: 10px;
 }
@@ -557,17 +561,18 @@ tr:hover:not(.tr1) {
   font-weight: bold;
 }
 
-td button, button {
+td button,
+button {
   height: 48px;
   width: 160px;
   border-radius: 4px;
-  background-color: #0065AD;
-  color: #FAFAFA;
+  background-color: #0065ad;
+  color: #fafafa;
   font-size: 23px;
 }
 
 button:hover {
-  background-color: #0065AD;
+  background-color: #0065ad;
 }
 
 video {
@@ -581,8 +586,8 @@ video {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .titlesimg img {
@@ -600,8 +605,8 @@ video {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .titlesimg .titles h4 {
@@ -633,14 +638,14 @@ video {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .h4-title {
@@ -648,7 +653,7 @@ video {
 }
 
 .h4-title h4 {
-  color: #AFAFAF;
+  color: #afafaf;
   margin-bottom: 6px;
 }
 
@@ -661,10 +666,10 @@ video {
 .upload .text-box {
   margin-left: 25px;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .upload .text-box button {
@@ -678,14 +683,15 @@ video {
   margin-right: auto;
   padding-right: 20px;
   margin-top: 24px;
-  color: #0095FF;
+  color: #0095ff;
   font-size: 1.3em;
 }
 
-#title, #description {
+#title,
+#description {
   width: 95%;
   border-radius: 4px;
-  border-color: #AFAFAF;
+  border-color: #afafaf;
   padding: 7px 0px 7px 7px;
 }
 
@@ -711,8 +717,8 @@ video {
   .inner {
     padding-top: 0px;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .inner nav {
     width: 70%;
@@ -721,11 +727,11 @@ video {
     display: flex;
     height: 80px;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .inner nav input {
     margin-bottom: 10px;
@@ -738,8 +744,8 @@ video {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 250px;
   }
   .inner nav button {
@@ -748,7 +754,7 @@ video {
     margin-right: 24px;
   }
   .inner nav button p {
-    font-size: .75em;
+    font-size: 0.75em;
   }
   .inner nav button :nth-child(1) {
     margin-right: 15px;
@@ -769,10 +775,11 @@ video {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
-  .flexing .views h4, .flexing .likes h4 {
+  .flexing .views h4,
+  .flexing .likes h4 {
     padding-top: 5px;
   }
   .videotitle p {
@@ -781,17 +788,17 @@ video {
   .text-box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .text-box button {
     margin-top: 27px;
     margin-left: 16px;
     height: 50px;
-    font-size: 1.0em;
+    font-size: 1em;
     width: 27%;
   }
   .text-box #comment {
@@ -801,8 +808,8 @@ video {
   .text-box.text-box1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .comment {
     width: 100%;
@@ -810,8 +817,8 @@ video {
   }
   .commentpicture {
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     margin-left: 19px;
   }
   .commenttitle {
@@ -821,6 +828,10 @@ video {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin-left: 19px;
     margin-right: 19px;
   }
@@ -830,14 +841,14 @@ video {
   .flexing4 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
   .flexing4 button.form {
     width: 160px;
@@ -863,8 +874,8 @@ video {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   .comment-section {
     margin-top: 0px;

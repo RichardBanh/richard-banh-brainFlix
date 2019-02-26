@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Comment extends Component {
- render() {
-   return (
-    <>
-    {/* {
+  render() {
+    return (
+      <>
+        {/* {
     this.props.comments.map(comment =>{
       
         <div className="commentpicture">
@@ -19,11 +19,9 @@ class Comment extends Component {
         </div>
     }
    )} */}
-   hi
-   </>
-   )
+      </>
+    );
   }
 }
 
- 
 export default Comment;
