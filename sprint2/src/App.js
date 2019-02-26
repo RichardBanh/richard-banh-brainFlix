@@ -27,6 +27,7 @@ class App extends Component {
       .then( response => {
         this.setState({datas: response.data})
         this.setState({ids: response.data[0].id })
+        
       })
       .then(()=>{
         axios.get(currentvid(this.state.ids))
@@ -37,7 +38,10 @@ class App extends Component {
   }
  
   render() {
-    if (this.state.datas && this.state.current === null) 
+    console.log(this.state.datas)
+    console.log(this.state.current)
+
+    if (this.state.datas && this.state.current) 
     {
       return (
       <div>Loading</div>
@@ -56,7 +60,7 @@ class App extends Component {
           </Switch>
         </div>
         )
-      }
+    }
     }
     }  
 

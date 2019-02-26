@@ -4,7 +4,8 @@ class CommentL extends Component {
  render() { 
   return ( 
    <div>
-   <Comment comment={this.props.comments}/>
+     {console.log(this.props.comments)}
+   <Comment comments={this.props.comments}/>
    </div>
    );
 

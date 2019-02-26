@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 
 class Comment extends Component {
- render() { 
-   if(this.props.comment === null) {
-    return(
-      <h1>Loading</h1>
-    )
-  }
-  else{
-    this.props.comment.map(comment =>{
-      return (
+ render() {
+   return (
+    <>
+    {/* {
+    this.props.comments.map(comment =>{
+      
         <div className="commentpicture">
           <div className="blankimg"></div>
           <div className="commenttitle">
@@ -20,10 +17,13 @@ class Comment extends Component {
             <div className="comment">{comment.comment}</div>
           </div>
         </div>
-      )
-    })
+    }
+   )} */}
+   hi
+   </>
+   )
   }
 }
-}
+
  
 export default Comment;
