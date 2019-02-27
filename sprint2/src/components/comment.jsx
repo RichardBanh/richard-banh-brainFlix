@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Comment extends Component {
   render() {
-    console.log(this.props.comments)
+    console.log(this.props.comments);
     var boop = this.props.comments.map(comment => {
       return (
         <div className="commentpicture">
@@ -14,9 +14,10 @@ class Comment extends Component {
             </div>
             <div className="comment">{comment.comment}</div>
           </div>
-        </div>)
-      })
-    return boop
+        </div>
+      );
+    });
+    return boop;
   }
 }
 

@@ -16,10 +16,10 @@ class App extends Component {
       data: [],
       id: "",
       current: [],
-      loaded: false
+      loaded: false,
+      new_vid_id_data: []
     };
   }
-
   componentDidMount() {
     axios
       .get(urlvid)
@@ -32,7 +32,10 @@ class App extends Component {
           this.setState({ current: response.data });
           this.setState({ loaded: true });
         });
-      });
+      })
+      .then(() =>{
+        
+      })
   }
 
   render() {
@@ -43,10 +46,8 @@ class App extends Component {
     if (this.state.loaded === false) {
       return <div>Loading</div>;
     } else {
-      // console.log(this.state.loaded + "yes")
-      // const suggestedlistdata = this.state.datas
-      // const videosection = () => <Videosection mainVideo={this.state.current} sideVideo={suggestedlistdata}/>
       const up = () => <Videoup mainVideo={this.props.mainVideo} />;
+
       return (
         <div>
           <Nav />
@@ -62,6 +63,23 @@ class App extends Component {
               )}
             />
             <Route path="/videoup" component={up} />
+            <Route
+              path="/:id"
+              render={routeProps => {
+                const videoId = routeProps.match.params.id;
+                const wholeurl = `https://project-2-api.herokuapp.com/videos/${videoId}?api_key=58d3de8d-b26f-49c9-bb56-b810f7c8432e`
+                function blah(url) {
+                  axios
+                  .get(url)
+                  .then(response => {
+                    this.setState({ new_vid_id_data: response.data[0]});
+                  });
+                }
+                
+                blah(wholeurl);
+                return <Videosection mainVideo={this.state.new_vid_id_data} />
+              }}
+            />
           </Switch>
         </div>
       );

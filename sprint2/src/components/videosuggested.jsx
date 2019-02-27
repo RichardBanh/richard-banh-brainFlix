@@ -9,7 +9,7 @@ class Videosug extends Component {
       var sugs = this.props.sugs.map(stoop => {
         return (
           <div>
-            <a href="">
+            <a href={stoop.id}>
               <div className="titlesimg">
                 <img src={stoop.image} alt="" />
                 <div className="titles">

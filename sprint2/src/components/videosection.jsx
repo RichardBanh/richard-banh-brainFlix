@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Video from "./video";
 import Videotitle from "./videotitle.jsx";
 import Form from "./form";
-import CommentL from "./commentlist.jsx";
+import CommentList from "./CommentList.jsx";
 import Videolist from "./videolist.jsx";
 
 class Videosection extends Component {
@@ -14,7 +14,7 @@ class Videosection extends Component {
           <div className="">
             <Videotitle mainVideo={this.props.mainVideo} />
             <Form />
-            <CommentL comments={this.props.mainVideo.comments} />
+            <CommentList comments={this.props.mainVideo.comments} />
           </div>
           <div>
             <Videolist suggestedlistdata={this.props.sideVideo} />
