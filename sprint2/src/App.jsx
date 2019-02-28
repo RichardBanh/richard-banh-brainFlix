@@ -65,7 +65,6 @@ class App extends Component {
               path="/:id"
               render={routeProps => {
                 const videoId = routeProps.match.params.id;
-
                 return <Videosection mainVideo={this.state.new_vid_id_data} />;
               }}
             />
