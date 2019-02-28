@@ -9,7 +9,7 @@ const urlvid = `https://project-2-api.herokuapp.com/videos${dakey}`;
 const currentvid = id =>
   `https://project-2-api.herokuapp.com/videos/${id}${dakey}`;
 
-function clickedonme(params) {}
+
 
 class App extends Component {
   constructor() {
@@ -63,10 +63,10 @@ class App extends Component {
             <Route path="/videoup" component={up} />
             <Route
               path="/:id"
-              render={routeProps => {
-                const videoId = routeProps.match.params.id;
-                return <Videosection mainVideo={this.state.new_vid_id_data} />;
-              }}
+              render={() =>
+              (<Videosection mainVideo={this.state.current}
+                sideVideo={this.state.data}/>)
+              }
             />
           </Switch>
         </div>

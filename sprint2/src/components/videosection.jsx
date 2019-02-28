@@ -16,6 +16,7 @@ function axioscall(urlonclick) {
       comments: response.data.comments
     });
   });
+  
 }
 
 function urlonclick(id) {
