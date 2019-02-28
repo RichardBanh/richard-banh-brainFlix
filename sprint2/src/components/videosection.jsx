@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Video from "./video";
-import Videotitle from "./videotitle.jsx";
+import Videotitle from "./videotitle";
 import Form from "./form";
-import Commentlist from "./CommentList.jsx";
-import Videolist from "./videolist.jsx";
+import Commentlist from "./CommentList";
+import Videolist from "./videolist";
 import axios from "axios";
 // Going to do a axios call function
 // Then then state change function
@@ -47,6 +47,7 @@ class Videosection extends Component {
   urlonclick(id) {
     return `https://project-2-api.herokuapp.com/videos/${id}?api_key=58d3de8d-b26f-49c9-bb56-b810f7c8432e`;
   }
+
   render() {
     return (
       <div>
@@ -58,7 +59,11 @@ class Videosection extends Component {
             <Commentlist comments={this.state.comments} />
           </div>
           <div>
-            <Videolist suggestedlistdata={this.props.sideVideo} axioscall={this.axioscall} urlonclick={this.urlonclick}/>
+            <Videolist
+              suggestedlistdata={this.props.sideVideo}
+              axioscall={this.axioscall}
+              urlonclick={this.urlonclick}
+            />
           </div>
         </div>
       </div>

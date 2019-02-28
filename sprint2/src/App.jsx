@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Nav from "./components/navbar";
 import Videosection from "./components/videosection";
-import Videoup from "./components/videoup.jsx";
+import Videoup from "./components/videoup";
 import { Route, Switch } from "react-router-dom";
 import axios from "axios";
 const dakey = "?api_key=58d3de8d-b26f-49c9-bb56-b810f7c8432e";
@@ -34,9 +34,9 @@ class App extends Component {
           this.setState({ current: response.data });
           this.setState({ loaded: true });
         });
-      })
+      });
   }
- 
+
   render() {
     console.log(this.state.data);
     console.log(this.state.current);
@@ -66,7 +66,7 @@ class App extends Component {
               render={routeProps => {
                 const videoId = routeProps.match.params.id;
 
-                return <Videosection mainVideo={this.state.new_vid_id_data} />
+                return <Videosection mainVideo={this.state.new_vid_id_data} />;
               }}
             />
           </Switch>
