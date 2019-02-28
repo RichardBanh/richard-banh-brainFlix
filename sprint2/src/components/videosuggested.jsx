@@ -8,16 +8,14 @@ class Videosug extends Component {
     } else {
       var sugs = this.props.sugs.map(stoop => {
         return (
-          <div>
-            <a href={stoop.id}>
-              <div className="titlesimg">
-                <img src={stoop.image} alt="" />
-                <div className="titles">
-                  <h4>{stoop.title}</h4>
-                  <h5>{stoop.channel}</h5>
-                </div>
+          <div onClick={this.props.axioscall(this.props.urlonclick(stoop.id))}>
+            <div className="titlesimg">
+              <img src={stoop.image} alt="" />
+              <div className="titles">
+                <h4>{stoop.title}</h4>
+                <h5>{stoop.channel}</h5>
               </div>
-            </a>
+            </div>
           </div>
         );
       });

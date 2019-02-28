@@ -7,7 +7,7 @@ class Videolist extends Component {
     return (
       <div className="flexing1">
         <h4 className="boop">NEXT VIDEO</h4>
-        <Videosug sugs={this.props.suggestedlistdata} />
+        <Videosug sugs={this.props.suggestedlistdata} axioscall={this.props.axioscall} urlonclick={this.props.urlonclick}/>
       </div>
     );
   }
