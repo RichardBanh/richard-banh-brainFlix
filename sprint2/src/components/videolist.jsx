@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Videosug from "./videosuggested";
+import Videosug from "./Videosuggested";
 
 class Videolist extends Component {
   render() {
@@ -8,9 +8,10 @@ class Videolist extends Component {
       <div className="flexing1">
         <h4 className="boop">NEXT VIDEO</h4>
         <Videosug
-          sugs={this.props.suggestedlistdata}
+          suggestedlistdata={this.props.suggestedlistdata}
           axioscall={this.props.axioscall}
           urlonclick={this.props.urlonclick}
+          mainVideo={this.props.mainVideo}
         />
       </div>
     );

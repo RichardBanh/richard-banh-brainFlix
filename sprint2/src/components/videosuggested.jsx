@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 class Videosug extends Component {
   render() {
     console.log(this.props);
-    if (this.props.sugs === null) {
+    if (this.props.suggestedlistdata === null) {
       return <div>Loading</div>;
     } else {
-      var sugs = this.props.sugs.map(stoop => {
+      var suggestedlistdata = this.props.suggestedlistdata.filter((boop)=>{return ( boop.id!== this.props.mainVideo.id)}).map(stoop => {
         return (
           <div>
             <Link
@@ -28,7 +28,7 @@ class Videosug extends Component {
         );
       });
     }
-    return sugs;
+    return suggestedlistdata;
   }
 }
 

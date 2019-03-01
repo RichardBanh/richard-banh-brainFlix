@@ -1,15 +1,13 @@
 import React, { Component } from "react";
-import Nav from "./components/navbar";
-import Videosection from "./components/videosection";
-import Videoup from "./components/videoup";
+import Nav from "./components/Navbar";
+import Videosection from "./components/Videosection";
+import Videoup from "./components/Videoup";
 import { Route, Switch } from "react-router-dom";
 import axios from "axios";
 const dakey = "?api_key=58d3de8d-b26f-49c9-bb56-b810f7c8432e";
 const urlvid = `https://project-2-api.herokuapp.com/videos${dakey}`;
 const currentvid = id =>
   `https://project-2-api.herokuapp.com/videos/${id}${dakey}`;
-
-
 
 class App extends Component {
   constructor() {
@@ -22,6 +20,7 @@ class App extends Component {
       new_vid_id_data: []
     };
   }
+
   componentDidMount() {
     axios
       .get(urlvid)
@@ -41,7 +40,6 @@ class App extends Component {
     console.log(this.state.data);
     console.log(this.state.current);
     console.log(this.state.loaded);
-
     if (this.state.loaded === false) {
       return <div>Loading</div>;
     } else {
@@ -63,10 +61,13 @@ class App extends Component {
             <Route path="/videoup" component={up} />
             <Route
               path="/:id"
-              render={() =>
-              (<Videosection mainVideo={this.state.current}
-                sideVideo={this.state.data}/>)
-              }
+              render={(routeProps) => (
+                <Videosection
+                  mainVideo={this.state.current}
+                  sideVideo={this.state.data}
+                  {...routeProps}
+                />
+              )}
             />
           </Switch>
         </div>

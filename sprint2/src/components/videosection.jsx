@@ -1,23 +1,12 @@
 import React, { Component } from "react";
-import Video from "./video";
-import Videotitle from "./videotitle";
-import Form from "./form";
+import Video from "./Video";
+import Videotitle from "./Videotitle";
+import Form from "./Form";
 import Commentlist from "./CommentList";
-import Videolist from "./videolist";
+import Videolist from "./Videolist";
 import axios from "axios";
 // Going to do a axios call function
 // Then then state change function
-
-function axioscall(urlonclick) {
-  axios.get(urlonclick).then(response => {
-    this.setState({
-      image: response.data.image,
-      mainVideo: response.data,
-      comments: response.data.comments
-    });
-  });
-  
-}
 
 function urlonclick(id) {
   return `https://project-2-api.herokuapp.com/videos/${id}?api_key=58d3de8d-b26f-49c9-bb56-b810f7c8432e`;
@@ -31,7 +20,8 @@ class Videosection extends Component {
     this.state = {
       mainVideo: this.props.mainVideo,
       comments: this.props.mainVideo.comments,
-      image: this.props.mainVideo.image
+      image: this.props.mainVideo.image,
+      sideVideo: this.props.sideVideo
     };
   }
 
@@ -61,7 +51,8 @@ class Videosection extends Component {
           </div>
           <div>
             <Videolist
-              suggestedlistdata={this.props.sideVideo}
+              suggestedlistdata={this.state.sideVideo}
+              mainVideo={this.state.mainVideo}
               axioscall={this.axioscall}
               urlonclick={this.urlonclick}
             />
