@@ -8,10 +8,6 @@ import axios from "axios";
 // Going to do a axios call function
 // Then then state change function
 
-function urlonclick(id) {
-  return `https://project-2-api.herokuapp.com/videos/${id}?api_key=58d3de8d-b26f-49c9-bb56-b810f7c8432e`;
-}
-
 class Videosection extends Component {
   constructor(props) {
     super(props);

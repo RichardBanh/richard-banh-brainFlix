@@ -69,5 +69,5 @@ app.post("/videos", (req, res) => {
   }
   videosuggestedlist.push(newVideo);
   videodescriptive.push(newVideodescriptive);
-  res.send("success");
+  res.send("successfully posted");
 });

@@ -1,8 +1,39 @@
 import React, { Component } from "react";
 import axios from "axios";
-class Videoup extends Component {
-  
+const urlvid = `http://localhost:8080/videos`;
 
+
+
+class Videoup extends Component {
+  post=()=> {
+    axios
+      .post(urlvid, {
+        title: this.state.valuetitle,
+        description: this.state.valuedescription
+      })
+      .then(response => {
+        alert(response.data);
+      });
+    document.getElementsByid(this.description).reset();
+  }
+  
+  cancel=()=> {
+    document.getElementById(this.title).reset();
+    document.getElementById(this.description).reset();
+  }
+  
+  handling_change = (event)=>{
+    this.setState ={
+      [event.target.id]: event.target.value
+    }
+  }
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: null,
+      description: null
+    };
+  }
   render() {
     return (
       <div className="upload">
@@ -21,6 +52,7 @@ class Videoup extends Component {
                   type="text"
                   name="comment-section"
                   placeholder="Add a title to your video!"
+                  onChange={this.handling_change}
                 />
                 <br />
                 <h4>ADD A VIDEO DESCRIPTION</h4>
@@ -29,11 +61,16 @@ class Videoup extends Component {
                   type="text"
                   name="comment-section"
                   placeholder="Add a description of your video"
+                  onChange={this.handling_change}
                 />
               </form>
               <div className="flexing4">
-                <button className="form">PUBLISH</button>
-                <div className="center">CANCEL</div>
+                <button className="form" onClick={this.post}>
+                  PUBLISH
+                </button>
+                <div className="center" onClick={this.cancel}>
+                  CANCEL
+                </div>
               </div>
             </div>
           </div>

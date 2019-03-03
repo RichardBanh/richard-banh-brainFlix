@@ -8,10 +8,6 @@ import axios from "axios";
 // Going to do a axios call function
 // Then then state change function
 
-function urlonclick(id) {
-  return `http://localhost:8080/videos/${id}`;
-}
-
 class Videosection extends Component {
   constructor(props) {
     super(props);
