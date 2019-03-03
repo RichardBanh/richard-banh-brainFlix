@@ -4,10 +4,10 @@ import Videosection from "./components/Videosection";
 import Videoup from "./components/Videoup";
 import { Route, Switch } from "react-router-dom";
 import axios from "axios";
-const dakey = "?api_key=58d3de8d-b26f-49c9-bb56-b810f7c8432e";
-const urlvid = `https://project-2-api.herokuapp.com/videos${dakey}`;
+
+const urlvid = `http://localhost:8080/videos`;
 const currentvid = id =>
-  `https://project-2-api.herokuapp.com/videos/${id}${dakey}`;
+  `http://localhost:8080/videos/${id}`;
 
 class App extends Component {
   constructor() {

@@ -9,7 +9,7 @@ import axios from "axios";
 // Then then state change function
 
 function urlonclick(id) {
-  return `https://project-2-api.herokuapp.com/videos/${id}?api_key=58d3de8d-b26f-49c9-bb56-b810f7c8432e`;
+  return `http://localhost:8080/videos/${id}`;
 }
 
 class Videosection extends Component {
@@ -36,7 +36,7 @@ class Videosection extends Component {
   }
 
   urlonclick(id) {
-    return `https://project-2-api.herokuapp.com/videos/${id}?api_key=58d3de8d-b26f-49c9-bb56-b810f7c8432e`;
+    return `http://localhost:8080/videos/${id}`;
   }
 
   render() {
