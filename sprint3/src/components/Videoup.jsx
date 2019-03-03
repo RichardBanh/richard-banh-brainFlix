@@ -2,38 +2,35 @@ import React, { Component } from "react";
 import axios from "axios";
 const urlvid = `http://localhost:8080/videos`;
 
-
-
 class Videoup extends Component {
-  post=()=> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      description_section: "",
+      title_section: ""
+    };
+  }
+  post = () => {
     axios
       .post(urlvid, {
-        title: this.state.valuetitle,
-        description: this.state.valuedescription
+        title: this.state.title_section,
+        description: this.state.description_section
       })
       .then(response => {
         alert(response.data);
       });
-    document.getElementsByid(this.description).reset();
-  }
-  
-  cancel=()=> {
-    document.getElementById(this.title).reset();
-    document.getElementById(this.description).reset();
-  }
-  
-  handling_change = (event)=>{
-    this.setState ={
-      [event.target.id]: event.target.value
-    }
-  }
-  constructor(props) {
-    super(props);
-    this.state = {
-      title: null,
-      description: null
-    };
-  }
+  };
+
+  update_input_state = event => {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  };
+
+  cancel = () => {
+    window.location.reload();
+  };
+
   render() {
     return (
       <div className="upload">
@@ -50,18 +47,18 @@ class Videoup extends Component {
                 <textarea
                   id="title"
                   type="text"
-                  name="comment-section"
+                  name="title_section"
                   placeholder="Add a title to your video!"
-                  onChange={this.handling_change}
+                  onChange={this.update_input_state}
                 />
                 <br />
                 <h4>ADD A VIDEO DESCRIPTION</h4>
                 <textarea
                   id="description"
                   type="text"
-                  name="comment-section"
+                  name="description_section"
                   placeholder="Add a description of your video"
-                  onChange={this.handling_change}
+                  onChange={this.update_input_state}
                 />
               </form>
               <div className="flexing4">
