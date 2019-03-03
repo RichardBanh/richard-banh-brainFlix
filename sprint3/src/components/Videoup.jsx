@@ -11,6 +11,9 @@ class Videoup extends Component {
     };
   }
   post = () => {
+    if (!this.state.description_section || !this.state.title_section) {
+      return alert("Please enter description and or title");
+    }
     axios
       .post(urlvid, {
         title: this.state.title_section,

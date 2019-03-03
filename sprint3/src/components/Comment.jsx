@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Comment extends Component {
   dateconverter(timestamp) {
-    var date = new Date();
+    var date = new Date(timestamp);
     var year = date.getFullYear(timestamp);
     var month = date.getMonth() + 1;
     var day = date.getDate();
