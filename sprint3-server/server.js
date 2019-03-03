@@ -48,14 +48,15 @@ app.post("/videos", (req, res) => {
     id: uuid.v4(),
     title: req.body.title,
     channel: "Mohan Muruge",
-    image: "https://images.unsplash.com/photo-1526346093155-a601c2cbe917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80",
-    description: req.body.description
+    image:
+      "https://images.unsplash.com/photo-1526346093155-a601c2cbe917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80"
   };
   const newVideodescriptive = {
     id: newVideo.id,
     title: req.body.title,
     channel: "Mohan Muruge",
-    image: "https://images.unsplash.com/photo-1526346093155-a601c2cbe917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80",
+    image:
+      "https://images.unsplash.com/photo-1526346093155-a601c2cbe917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80",
     description: req.body.description,
     views: "0",
     likes: "0",
@@ -89,9 +90,6 @@ app.post("/videos", (req, res) => {
       }
     ]
   };
-  if (!newVideo.title || !newVideo.description) {
-    return res.status(400).send("Please include title and or description");
-  }
   videosuggestedlist.push(newVideo);
   videodescriptive.push(newVideodescriptive);
   res.send("successfully posted");
