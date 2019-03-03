@@ -48,14 +48,14 @@ app.post("/videos", (req, res) => {
     id: uuid.v4(),
     title: req.body.title,
     channel: "Mohan Muruge",
-    image: "https://i.imgur.com/q4dnUxr.jpg",
+    image: "https://images.unsplash.com/photo-1526346093155-a601c2cbe917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80",
     description: req.body.description
   };
   const newVideodescriptive = {
     id: newVideo.id,
     title: req.body.title,
     channel: "Mohan Muruge",
-    image: "https://i.imgur.com/q4dnUxr.jpg",
+    image: "https://images.unsplash.com/photo-1526346093155-a601c2cbe917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80",
     description: req.body.description,
     views: "0",
     likes: "0",
