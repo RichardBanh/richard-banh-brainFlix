@@ -5,7 +5,7 @@ import Videoup from "./components/Videoup";
 import { Route, Switch } from "react-router-dom";
 import axios from "axios";
 
-const urlvid = `http://localhost:8080/videos`;
+const urlvid = `http://localhost:8080/videos/`;
 const currentvid = id =>
   `http://localhost:8080/videos/${id}`;
 
