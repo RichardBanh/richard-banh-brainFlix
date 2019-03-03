@@ -21,6 +21,7 @@ class Videoup extends Component {
       })
       .then(response => {
         alert(response.data);
+        window.location.reload();
       });
   };
 
