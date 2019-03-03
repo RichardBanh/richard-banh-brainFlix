@@ -4,8 +4,10 @@ const app = express();
 const bodyParser = require("body-parser");
 const videodescriptive = require("./videodescriptive");
 const videosuggestedlist = require("./videosuggestedlist");
+const newvideo = require("./newvideo")
 const uuid = require("uuid");
 const cors = require("cors");
+const fs = require("fs");
 
 app.use(cors());
 app.use(express.static("public"));
@@ -92,5 +94,6 @@ app.post("/videos", (req, res) => {
   };
   videosuggestedlist.push(newVideo);
   videodescriptive.push(newVideodescriptive);
+  fs.writeFileSync("./newvideo.json", JSON.stringify(videodescriptive));
   res.send("successfully posted");
 });
