@@ -4,7 +4,6 @@ const app = express();
 const bodyParser = require("body-parser");
 const videodescriptive = require("./videodescriptive");
 const videosuggestedlist = require("./videosuggestedlist");
-const newvideo = require("./newvideo")
 const uuid = require("uuid");
 const cors = require("cors");
 const fs = require("fs");
@@ -43,7 +42,7 @@ app.get("/videos/:id", (req, res) => {
   res.json(videodescriptivedata);
 });
 
-//adds video details
+//adds video details to a post
 app.post("/videos", (req, res) => {
   console.log(req.body + " recieved");
   const newVideo = {
